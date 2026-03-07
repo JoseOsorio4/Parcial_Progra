@@ -92,11 +92,10 @@ public class Main {
 				        System.out.print("Ingrese su apellido: ");
 				        apellido = sc.nextLine();
 
-				        // convertir a minusculas
 				        nombre = nombre.toLowerCase();
 				        apellido = apellido.toLowerCase();
 
-				        // eliminar espacios
+				  
 				        nombre = nombre.replace(" ", "");
 				        apellido = apellido.replace(" ", "");
 
