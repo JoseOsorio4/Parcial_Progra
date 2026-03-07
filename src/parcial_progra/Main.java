@@ -1,16 +1,77 @@
 package parcial_progra;
 
+import java.util.Scanner;
+
 public class Main {
-
+	
+   static Scanner sc = new Scanner(System.in);
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("Hola mundooooo");
-		System.out.println("Comprobacion de commits y cargas al sistema");
-		System.out.println("Prueba de commit");
-		System.out.println("Prueba final");
-		System.out.println("Prueba final.");
+		//estrutura para conectar 
+				 int opcion;
 
+			        do {
+			            System.out.println("\n MENU");
+			            System.out.println("1. Ejercicio 1");
+			            System.out.println("2. Ejercicio 2");
+			            System.out.println("3. Ejercicio 3");
+			            System.out.println("0. Salir");
+			            System.out.print("Seleccione opcion: ");
+			            opcion = sc.nextInt();
 
-	}
+			            switch(opcion){
+			                case 1: ejercicio1();
+			                break;
+			                case 2: ejercicio2();
+			                break;
+			                case 3: ejercicio3();
+			                case 4: ejercicio4();
+			                case 0: System.out.println("Saliendo...");
+			                default: System.out.println("Opcion invalida");
+			            }
 
+			        } while(opcion != 0);
+			    }
+			    // mis metodos o modularizacion
+// ejercicio 1: escriba un programa que lea un numero n ( entre 1 y 12 ) y genere la  tabla de multiplicar de n del 1 al 12
+			public static void ejercicio1(){
+				 System.out.print("Ingrese un numero entre el n1 y el n12: ");
+				    int n = sc.nextInt();
+
+				    if(n >= 1 && n <= 12){
+
+				        for(int i = 1; i <= 10; i++){
+				            System.out.println(n + " x " + i + " == " + (n * i));
+				        }
+
+				    }else{
+				        System.out.println("Numero no disponible");
+				    }
+
+				}
+// ejerccicio 2: escriba un programa que lea 5 calificaciones y calcule el promedio con dos decimales 
+			public static void ejercicio2(){
+			}
+// ejercicio 3:escriba un correo que lea nombre y apellido y genere un correo con el formato de la umg (nombreapellido@mi umg.edu.gt)			
+			public static void ejercicio3(){
+				   sc.nextLine();
+
+				    System.out.print("Ingrese nombre: ");
+				    String nombre = sc.nextLine();
+
+				    System.out.print("Ingrese su apellido: ");
+				    String Apellido = sc.nextLine();
+
+				    nombre = nombre.toLowerCase().trim();
+				    Apellido = Apellido.toLowerCase().trim();
+
+				    String correo = nombre + ".." + Apellido + "@umg.edu.gt";
+
+				    System.out.println("Su correo de eestudiante sera el siguente : " + correo);
+
+				}
+			
+// ejercicio 4: escriba un programa que lea nombre y apellido y genere un usuario con el formato: Inicial nombre+apellido
+//como por ejemploa:juan Perez=jPerez			
+			public static void ejercicio4(){
+			}
 }
