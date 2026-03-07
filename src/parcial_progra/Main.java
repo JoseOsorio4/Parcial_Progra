@@ -78,25 +78,35 @@ public class Main {
 				    }
 			
 	
-// ejercicio 3:escriba un correo que lea nombre y apellido y genere un correo con el formato de la umg (nombreapellido@mi umg.edu.gt)			
+// ejercicio 3:escriba un correo que lea nombre y apellido y genere un correo con el formato de la umg (nombreapellido@mi umg.edu.gt) se debe convertir el texto a minusculas y eliminar espacioos si los hay 			
 			public static void ejercicio3(){
-				   sc.nextLine();
-
-				    System.out.print("Ingrese nombre: ");
-				    String nombre = sc.nextLine();
-
-				    System.out.print("Ingrese su apellido: ");
-				    String Apellido = sc.nextLine();
-
-				    nombre = nombre.toLowerCase().trim();
-				    Apellido = Apellido.toLowerCase().trim();
-
-				    String correo = nombre + ".." + Apellido + "@umg.edu.gt";
-
-				    System.out.println("Su correo de eestudiante sera el siguente : " + correo);
-
-				}
 			
+
+				        String nombre;
+				        String apellido;
+				        String correo;
+
+				        System.out.print("Ingrese su nombre: ");
+				        nombre = sc.nextLine();
+
+				        System.out.print("Ingrese su apellido: ");
+				        apellido = sc.nextLine();
+
+				        // convertir a minusculas
+				        nombre = nombre.toLowerCase();
+				        apellido = apellido.toLowerCase();
+
+				        // eliminar espacios
+				        nombre = nombre.replace(" ", "");
+				        apellido = apellido.replace(" ", "");
+
+				    
+				        correo = nombre + apellido + "@miumg.edu.gt";
+
+				        System.out.println("Correo generado: " + correo);
+
+				    }
+				
 // ejercicio 4: escriba un programa que lea nombre y apellido y genere un usuario con el formato: Inicial nombre+apellido
 //como por ejemploa:juan Perez=jPerez			
 			public static void ejercicio4(){
