@@ -14,6 +14,7 @@ public class Main {
 			            System.out.println("1. Ejercicio 1");
 			            System.out.println("2. Ejercicio 2");
 			            System.out.println("3. Ejercicio 3");
+			            System.out.println("3. Ejercicio 4");
 			            System.out.println("0. Salir");
 			            System.out.print("Seleccione opcion: ");
 			            opcion = sc.nextInt();
@@ -50,7 +51,33 @@ public class Main {
 				}
 // ejerccicio 2: escriba un programa que lea 5 calificaciones y calcule el promedio con dos decimales 
 			public static void ejercicio2(){
-			}
+            
+				        
+				        double cal1, cal2, cal3, cal4, cal5;
+				        double Promedio;
+
+				        System.out.print("Ingrese la  primer calificacion 1: ");
+				        cal1 = sc.nextDouble();
+
+				        System.out.print("Ingrese la segunda calificacion 2: ");
+				        cal2 = sc.nextDouble();
+
+				        System.out.print("Ingrese la tercer calificacion 3: ");
+				        cal3 = sc.nextDouble();
+
+				        System.out.print("Ingrese la cuarta calificacion 4: ");
+				        cal4 = sc.nextDouble();
+
+				        System.out.print("Ingrese la quinta calificacion 5: ");
+				        cal5 = sc.nextDouble();
+
+				        Promedio = (cal1 + cal2 + cal3 + cal4 + cal5) / 5;
+
+				        System.out.printf("El promedio es: %.2f", Promedio);
+
+				    }
+			
+	
 // ejercicio 3:escriba un correo que lea nombre y apellido y genere un correo con el formato de la umg (nombreapellido@mi umg.edu.gt)			
 			public static void ejercicio3(){
 				   sc.nextLine();
