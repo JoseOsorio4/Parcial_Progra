@@ -110,5 +110,23 @@ public class Main {
 // ejercicio 4: escriba un programa que lea nombre y apellido y genere un usuario con el formato: Inicial nombre+apellido
 //como por ejemploa:juan Perez=jPerez			
 			public static void ejercicio4(){
-			}
+				String nombre;
+				String Apellido;
+				String Usuario;
+
+				System.out.print("Ingrese su nombre: ");
+				nombre = sc.nextLine();
+
+				System.out.print("Ingrese su apellido: ");
+				Apellido = sc.nextLine();
+
+
+				char inicial = nombre.charAt(0);
+
+				Usuario = inicial + Apellido;
+
+				System.out.println("El usario generado es: " + Usuario);
+
+				}
 }
+				//finalizado	
